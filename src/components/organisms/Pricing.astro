@@ -1,0 +1,101 @@
+---
+import { Button } from '@/components/ui/button';
+import { Card } from '@/components/ui/card';
+---
+
+<section class="py-20 px-4">
+  <div class="max-w-6xl mx-auto">
+    <div class="text-center mb-16 space-y-4">
+      <h2 class="text-4xl md:text-5xl font-lora font-bold text-balance">
+        Rutas de Ascenso
+      </h2>
+      <p class="text-muted-foreground max-w-xl mx-auto">
+        Cada proyecto tiene su propio ritmo. Elegí el nivel de acompañamiento que mejor se adapte a tu momento actual.
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-8">
+      <Card className="bg-primary-950/50 border-border p-8 space-y-6 flex flex-col justify-between">
+        <div class="space-y-6">
+          <h3 class="text-2xl font-lora font-bold text-primary">El Refugio</h3>
+          <div class="space-y-3">
+            <p class="text-sm text-muted-foreground italic">Tu puerta de entrada al mundo digital con elegancia y sencillez.</p>
+            <p class="text-3xl font-bold text-secondary">Nivel 1</p>
+          </div>
+          <ul class="space-y-3 text-muted-foreground text-sm">
+            <li class="flex items-start gap-2">
+              <span class="text-primary">✓</span>
+              <span>Web de página única (Landing)</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-primary">✓</span>
+              <span>Presencia profesional en Google</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-primary">✓</span>
+              <span>Carga instantánea en móviles</span>
+            </li>
+          </ul>
+        </div>
+        <Button variant="outline" className="w-full mt-6 text-text hover:bg-accent/80">Consultar</Button>
+      </Card>
+
+      <Card className="bg-primary-950 border-2 border-primary p-8 space-y-6 relative flex flex-col justify-between shadow-2xl">
+        <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-primary text-primary-foreground px-4 py-1 rounded-full text-xs font-bold tracking-widest uppercase">
+          Recomendado
+        </div>
+        <div class="space-y-6">
+          <h3 class="text-2xl font-lora font-bold text-primary">El Ascenso</h3>
+          <div class="space-y-3">
+            <p class="text-sm text-muted-foreground italic">Tu propia casa digital. Autonomía total para crecer sin depender de nadie.</p>
+            <p class="text-3xl font-bold text-secondary">Nivel 2</p>
+          </div>
+          <ul class="space-y-3 text-muted-foreground text-sm">
+            <li class="flex items-start gap-2 font-medium text-secondary-200">
+              <span class="text-primary">✓</span>
+              <span>Sitio multipágina completo</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-primary">✓</span>
+              <span>Panel de gestión desde el celular</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span>✓</span>
+              <span>Estrategia de posicionamiento local</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-primary">✓</span>
+              <span>Gestión de reservas o catálogo</span>
+            </li>
+          </ul>
+        </div>
+        <Button className="w-full bg-primary hover:bg-primary/70">Empezar</Button>
+      </Card>
+
+      <Card className="bg-primary-950/50 border-border p-8 space-y-6 flex flex-col justify-between">
+        <div class="space-y-6">
+          <h3 class="text-2xl font-lora font-bold text-primary">La Cima</h3>
+          <div class="space-y-3">
+            <p class="text-sm text-muted-foreground italic">Soluciones a medida para proyectos que no conocen fronteras.</p>
+            <p class="text-3xl font-bold text-secondary">Nivel 3</p>
+          </div>
+          <ul class="space-y-3 text-muted-foreground text-sm">
+            <li class="flex items-start gap-2">
+              <span class="text-primary">✓</span>
+              <span>Sistemas de gestión personalizados</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-primary">✓</span>
+              <span>Automatización de procesos</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-primary">✓</span>
+              <span>Acompañamiento estratégico Pro</span>
+            </li>
+          </ul>
+        </div>
+        <Button variant="outline" className="w-full mt-6 text-text hover:bg-accent/80">Contactar</Button>
+      </Card>
+    </div>
+  </div>
+</section>
