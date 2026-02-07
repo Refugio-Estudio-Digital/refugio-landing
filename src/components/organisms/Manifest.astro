@@ -1,0 +1,57 @@
+---
+import { Card } from '@/components/ui/card';
+---
+
+<section class="py-20 px-4 bg-secondary-950">
+	<div class="max-w-6xl mx-auto">
+		<div class="text-center mb-16 space-y-4">
+			<h2
+				class="text-4xl md:text-5xl font-lora font-bold text-balance text-secondary-50"
+			>
+				Nuestra Filosofía
+			</h2>
+			<p class="text-secondary-300 max-w-2xl mx-auto text-lg">
+				No construimos simples sitios web; diseñamos espacios de calma donde tu
+				proyecto puede crecer con raíces firmes.
+			</p>
+		</div>
+
+		<div class="grid md:grid-cols-3 gap-8">
+			<Card className="bg-background border-background-300/80 p-8 space-y-6">
+				<div class="text-4xl">🍃</div>
+				<h3 class="text-2xl font-lora font-bold text-secondary-200">
+					Presencia Liviana
+				</h3>
+				<p class="text-muted-foreground leading-relaxed">
+					Tu mensaje debe llegar sin esfuerzo. Creamos experiencias que cargan
+					al instante, para que la única preocupación de tus clientes sea
+					disfrutarte.
+				</p>
+			</Card>
+
+			<Card className="bg-background border-background-300/80 p-8 space-y-6">
+				<div class="text-4xl">🔑</div>
+				<h3 class="text-2xl font-lora font-bold text-secondary-200">
+					Tu Casa, Tus Reglas
+				</h3>
+				<p class="text-muted-foreground leading-relaxed">
+					Queremos que seas libre. Te entregamos las llaves de tu sitio para que
+					cambies fotos o precios desde tu celular, con la misma facilidad con
+					la que enviás un mensaje.
+				</p>
+			</Card>
+
+			<Card className="bg-background border-background-300/80 p-8 space-y-6">
+				<div class="text-4xl">🏔️</div>
+				<h3 class="text-2xl font-lora font-bold text-secondary-200">
+					Identidad con Raíces
+				</h3>
+				<p class="text-muted-foreground leading-relaxed">
+					Honramos lo que hacés. Diseñamos cada detalle a medida, asegurándonos
+					de que tu web refleje la misma calidez y dedicación que ponés en tu
+					trabajo cada día.
+				</p>
+			</Card>
+		</div>
+	</div>
+</section>
