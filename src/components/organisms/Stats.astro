@@ -1,0 +1,21 @@
+---
+const metricas = [
+  { valor: '100%', label: 'Satisfacción garantizada' },
+  { valor: '0.2s', label: 'Tiempo de carga' },
+  { valor: '50+', label: 'Proyectos lanzados' },
+  { valor: '24/7', label: 'Tu sitio, siempre activo' },
+];
+---
+
+<section class="py-16 px-6 bg-primary-950 border-y border-primary-900" data-animate>
+  <div class="max-w-6xl mx-auto">
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-4">
+      {metricas.map((m) => (
+        <div class="text-center space-y-2">
+          <p class="text-4xl md:text-5xl font-lora font-bold text-primary">{m.valor}</p>
+          <p class="text-text-400 text-sm tracking-wide">{m.label}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
