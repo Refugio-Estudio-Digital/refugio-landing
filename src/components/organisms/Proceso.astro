@@ -1,0 +1,58 @@
+---
+import { Mountain } from 'lucide-react';
+import { PencilIcon } from 'lucide-react';
+import { MapIcon } from 'lucide-react';
+
+const pasos = [
+	{
+		numero: '01',
+		titulo: 'Charlamos',
+		descripcion:
+			'Nos contás tu proyecto, qué soñás y qué te preocupa. Escuchamos con atención antes de proponer nada.',
+		icono: MapIcon,
+	},
+	{
+		numero: '02',
+		titulo: 'Diseñamos',
+		descripcion:
+			'Construimos tu espacio digital a medida. Cada detalle pensado para que refleje quién sos y qué hacés.',
+		icono: PencilIcon,
+	},
+	{
+		numero: '03',
+		titulo: 'Publicamos',
+		descripcion:
+			'Publicamos tu sitio y te entregamos las llaves. Vos manejás, nosotros seguimos cerca cuando nos necesitás.',
+		icono: Mountain,
+	},
+];
+---
+
+<section
+	id="proceso"
+	class="py-24 md:min-h-screen px-6 bg-background-950"
+	data-animate
+>
+	<div class="max-w-6xl mx-auto">
+		<div class="text-center mb-16 space-y-3">
+			<h2 class="text-4xl md:text-5xl font-lora">Cómo Trabajamos</h2>
+		</div>
+
+		<div class="grid grid-cols-3 mx-auto gap-4">
+			{
+				pasos.map((paso) => (
+					<div class="bg-background-950 text-center text-balance flex flex-col items-center p-8 space-y-5">
+						<p class="text-primary inline-flex p-2.5 bg-primary/20 text-xl font-lora font-semibold tracking-widest">
+							{paso.numero}
+						</p>
+
+						<h3 class="text-2xl font-lora tracking-wide text-text-100">
+							{paso.titulo}
+						</h3>
+						<p class="text-gray-500 leading-relaxed">{paso.descripcion}</p>
+					</div>
+				))
+			}
+		</div>
+	</div>
+</section>

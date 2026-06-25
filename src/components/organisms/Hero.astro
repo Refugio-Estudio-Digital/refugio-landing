@@ -1,39 +1,56 @@
 ---
+import { Image } from 'astro:assets';
 import { Button } from '@/components/ui/button';
+import heroImage from '@/assets/images/home-hero.png';
 ---
 
 <section
-	class="min-h-screen flex flex-col items-center justify-center px-4 py-20 text-center"
+	class="relative min-h-screen overflow-hidden flex flex-col items-center justify-center"
 >
-	<div class="max-w-3xl space-y-8">
-		<h1
-			class="text-5xl md:text-7xl font-lora font-bold text-balance leading-tight text-accent"
-		>
-			Elegancia es claridad.
-		</h1>
-		<p class="text-xl md:text-2xl text-muted-foreground leading-relaxed">
-			Infraestructura digital de alto rendimiento para marcas con identidad.
-		</p>
-		<p class="text-lg text-muted-foreground max-w-2xl mx-auto">
-			Construimos sitios web que cargan al instante, diseñados en Bariloche para
-			conectar con el mundo.
-		</p>
-		<div class="flex flex-col sm:flex-row gap-4 justify-center pt-4">
-			<Button asChild size="lg">
-				<a
-					href="https://wa.link/lg5kqo"
-					class="btn btn--default btn--lg bg-primary text-primary-900 hover:cursor-pointer hover:bg-primary/80"
-					>Empezar proyecto</a
-				>
-			</Button>
-			<Button asChild>
-				<a
-					class="btn btn--outline btn--lg border-primary text-primary hover:cursor-pointer hover:bg-primary/10 bg-transparent"
-					href="#pricing"
-				>
-					Más información
-				</a>
-			</Button>
+	<Image
+		src={heroImage}
+		alt="Paisaje de montaña patagónica"
+		class="absolute inset-0 w-full h-full object-cover"
+		widths={[768, 1280, 1920]}
+		sizes="100vw"
+		loading="eager"
+	/>
+	<div
+		class="absolute inset-0 bg-gradient-to-t from-background-950 via-background-950/70 to-background-950/20"
+	>
+	</div>
+
+	<div
+		class="relative z-10 px-6 pb-20 w-full text-center md:px-16 md:pb-28 max-w-4xl"
+		data-animate
+	>
+		<div class="space-y-6 text-center w-full">
+			<h1 class="text-6xl md:text-8xl font-lora italic leading-tight">
+				<span class="text-primary">Elegancia</span><br />es claridad.
+			</h1>
+			<p class="text-balance max-w-4xl">
+				Creamos sitios web de alto rendimiento que combinan diseño, velocidad y
+				análisis de datos para impulsar el crecimiento de tu negocio.
+			</p>
+			<div
+				class="flex flex-col items-center justify-center w-full sm:flex-row gap-4 pt-2"
+			>
+				<Button asChild size="lg">
+					<a
+						href="https://wa.link/lg5kqo"
+						class="btn btn--default uppercase font-bold btn--lg rounded-none bg-primary text-primary-900 hover:cursor-pointer hover:bg-primary/80"
+						>Explorar Soluciones</a
+					>
+				</Button>
+				<Button asChild>
+					<a
+						class="btn btn--outline uppercase font-bold btn--lg rounded-none border-primary text-primary hover:cursor-pointer hover:bg-primary/10 bg-transparent"
+						href="#nosotros"
+					>
+						Quiénes somos
+					</a>
+				</Button>
+			</div>
 		</div>
 	</div>
 </section>

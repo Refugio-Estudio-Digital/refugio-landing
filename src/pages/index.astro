@@ -1,15 +1,25 @@
 ---
 import Footer from '@/components/organisms/Footer.astro';
 import Hero from '@/components/organisms/Hero.astro';
+import Proceso from '@/components/organisms/Proceso.astro';
 import Manifest from '@/components/organisms/Manifest.astro';
+import Casos from '@/components/organisms/Casos.astro';
+import Stats from '@/components/organisms/Stats.astro';
 import Pricing from '@/components/organisms/Pricing.astro';
+import CtaCumbre from '@/components/organisms/CtaCumbre.astro';
 import Layout from '@/layouts/Layout.astro';
 import '@/styles/global.css';
+import About from '@/components/organisms/About.astro';
 ---
 
 <Layout>
 	<Hero />
-	<Manifest />
+	<About />
+	<Proceso />
+	<!-- <Manifest /> -->
+	<Casos />
+	<!-- <Stats /> -->
 	<Pricing />
-  <Footer />
+	<CtaCumbre />
+	<Footer />
 </Layout>
